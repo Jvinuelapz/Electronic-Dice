@@ -1,33 +1,24 @@
-# Wildlife Detection with Deep Learning (YOLOv8)
+# Electronic Dice with ATmega328P
 
-This repository contains a deep learning project focused on object detection for identifying four species of African wildlife—buffalo, elephant, rhino, and zebra—using the YOLOv8 model. The objective is to train and evaluate different model variants to achieve accurate and efficient detection.
+This repository documents a complete engineering design cycle for a multi-sided electronic dice. The project covers the entire development process, from initial problem definition and component research to detailed schematic design, PCB layout, software development, and 3D enclosure modeling. While a physical prototype was not assembled, all engineering stages for a production-ready device were completed.
 
-![Dataset Visualization](./images/Bounding_Boxes_Wildlife_Detection.png)
-
-## 📜 Project Description
-
-This project explores the use of convolutional neural networks, specifically the YOLOv8 architecture, for object detection in wildlife imagery. Several versions of the model (YOLOv8n, YOLOv8s) are trained and compared, and the impact of data augmentation techniques—such as brightness adjustment and horizontal flipping—is investigated to improve model performance.
-
-The full project report, which details the data preprocessing, model architecture, training, and evaluation of results, can be found at the link below:
+The final design is a compact, key-fob-sized device featuring a rechargeable LiPo battery, USB-C charging, and a dual 7-segment display.
 
 📄 **[Read the full project report (PDF)](./Wildlife%20Detection%20using%20Deep%20Learning.pdf)**
 
 ---
 
-## 🛠️ Technologies Used
+## ✨ Key Features
 
-* **Python 3.9**
-* **Ultralytics YOLOv8:** The primary framework for model training and inference.
-* **PyTorch:** The deep learning backend used by YOLOv8.
-* **OpenCV:** For image preprocessing and data augmentation.
-* **Scikit-learn:** For generating evaluation metrics like the confusion matrix and classification report.
-* **Pandas & NumPy:** For data manipulation and numerical operations.
-* **Matplotlib & Seaborn:** For data and results visualization.
-* **Jupyter Notebook:** For interactive data exploration and experimentation.
+* **Multi-Sided Dice:** Supports d4, d6, d8, d10, d12, and d20 dice types, selectable via a tactile button.
+* **Compact Design:** The final PCB measures just 38 x 48 mm.
+* **Clear Display:** Utilizes two 7-segment displays with multiplexing to clearly show roll results.
+* **Rechargeable:** Powered by a 150mAh LiPo battery with on-board USB charging via a TP4057 IC.
+* **Power Management:** Includes an LM2731 step-up voltage regulator to provide a stable 5V supply to all components.
 
 ---
 
-## ⚙️ Installation and Usage
+## ⚙️ The Engineering Process
 
 To run this project on your local machine, please follow these steps:
 
