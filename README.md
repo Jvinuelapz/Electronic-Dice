@@ -4,7 +4,7 @@ This repository documents a complete engineering design cycle for a multi-sided 
 
 The final design is a compact, key-fob-sized device featuring a rechargeable LiPo battery, USB-C charging, and a dual 7-segment display.
 
-📄 **[Read the full project report (PDF)](./Wildlife%20Detection%20using%20Deep%20Learning.pdf)**
+📄 **[Read the full project report (PDF)](Development%20Process.pdf)**
 
 ---
 
