@@ -20,33 +20,50 @@ The final design is a compact, key-fob-sized device featuring a rechargeable LiP
 
 ## ⚙️ The Engineering Process
 
-To run this project on your local machine, please follow these steps:
+This project followed a structured engineering lifecycle to ensure all objectives were met efficiently and reliably.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/Wildlife_detection_DL.git](https://github.com/your-username/Wildlife_detection_DL.git)
-    cd Wildlife_detection_DL
-    ```
+1. **Problem Definition:** Defined client requirements, project objectives, and created a Gantt chart for project planning.
 
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-    ```
+2. **Research & Feasibility:** Analyzed existing products and sourced compatible, cost-effective components (ATmega328P, 7-segment displays, etc.). A full feasibility assessment (Technical, Economic, Operational) was conducted.
 
-3.  **Install the dependencies:**
-    All the necessary libraries are listed in the `requirements.txt` file.
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Concept Design:**
+   
+    * **Software:** Developed the logic flow, including dice type selection, random number generation, and display multiplexing.
+    * **Hardware:** Created a detailed schematic, outlining power management, microcontroller connections, and user interface components.
+
+4. **PCB & Enclosure Design:**
+
+    * Designed a compact, two-layer PCB using KiCad, optimized for size and signal integrity.
+    * Modeled a custom 3D-printable enclosure in Autodesk Fusion 360 to house all components securely.
+
+5. **Simulation & Validation:** The core logic was tested in a simulated breadboard environment to validate the software and hardware interaction before finalization.
+
+---
+
+# 🚀 Core Competencies
+
+* **Embedded Systems Programming:** C++ development for the ATmega328P microcontroller using the Arduino IDE.
+* **PCB Design & Layout:** Schematic capture and two-layer PCB design using KiCad.
+* **Hardware Design:** Component selection, power management design (charging, voltage regulation), and circuit simulation.
+* **3D Modeling:** Designing a functional and ergonomic enclosure for 3D printing using Autodesk Fusion 360.
+* **Project Management:** Following a structured engineering design cycle from concept to a production-ready design.
+
+---
+
+# 🔧 Technical Specifications
+
+* **Microcontroller:** ATmega328P-AU
+* **Display:** 2x HDSP-513A Common Cathode 7-Segment Displays
+* **Power:** 3.7V 150mAh LiPo Battery
+* **Charging:** TP4057 Charging IC with Micro-USB input
+* **Voltage Regulator:** LM2731 Step-Up Converter (outputting 5V)
+* **User Input:** 2x Tactile Switches (for dice type and roll)
 
 ---
 
 ## 🗂️ Repository Structure
 
-- `Wildlife Detection using Deep Learning.pdf`: The detailed project report.
-- `Data_Exploration.ipynb`: Notebook for exploring and visualizing the dataset.
-- `Data_Augmentation.ipynb`: Notebook that implements the data augmentation techniques.
-- `Model_Training_and_evaluation.ipynb`: The main notebook for training and evaluating the YOLOv8 models and visualizing the results.
-- `requirements.txt`: A list of the required Python dependencies.
-- `.gitignore`: A file to ignore unnecessary files and directories.
+- `/Code`: Contains the Arduino `.ino` sketch for the microcontroller.
+- `/Hardware`: Includes the source files for the PCB layout (`/PCB`)and the 3D model for the enclosure (`/3D_Model`).
+- `/Images`: Contains visual assets for this README.
+- `Development_Process.pdf`: The detailed logbook documenting the entire project.
