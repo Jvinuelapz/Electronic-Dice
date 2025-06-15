@@ -1,6 +1,6 @@
 # Electronic Dice with ATmega328P
 
-![3D Visualization of the PCB Design](images/PCB_3D.jpg)
+![3D Visualization of the PCB Design](images/PCB_3D.png)
 
 This repository documents a complete engineering design cycle for a multi-sided electronic dice. The project covers the entire development process, from initial problem definition and component research to detailed schematic design, PCB layout, software development, and 3D enclosure modeling. While a physical prototype was not assembled, all engineering stages for a production-ready device were completed.
 
