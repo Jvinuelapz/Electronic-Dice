@@ -63,7 +63,7 @@ This project followed a structured engineering lifecycle to ensure all objective
 
 ## 🗂️ Repository Structure
 
-- `/Code`: Contains the Arduino `.ino` sketch for the microcontroller.
+- `/code`: Contains the Arduino `.ino` sketch for the microcontroller.
 - `/Hardware`: Includes the source files for the PCB layout (`/PCB`)and the 3D model for the enclosure (`/3D_Model`).
 - `/Images`: Contains visual assets for this README.
 - `Development_Process.pdf`: The detailed logbook documenting the entire project.
